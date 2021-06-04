@@ -32,7 +32,18 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/html-self-closing": [
+        "error",
+        {
+          "html": {
+            "component": "always",
+            "normal": "always",
+            "void": "always"
+          }
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
